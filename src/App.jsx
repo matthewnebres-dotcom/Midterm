@@ -122,7 +122,7 @@ function App() {
           </div>
 
           <div className="flex justify-center">
-            <div className="relative w-full max-w-sm rounded-3xl border border-green-400/30 bg-gradient-to-br from-yellow-400/10 to-violet-500/20 p-8 text-center shadow-2xl shadow-violet-900/20">
+            <div className="relative w-full max-w-sm rounded-3xl border border-green-400/30 bg-linear-to-br from-yellow-400/10 to-violet-500/20 p-8 text-center shadow-2xl shadow-violet-900/20">
               <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-yellow-400/10 blur-xl" />
 
               
