@@ -47,12 +47,12 @@ function App() {
   const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact']
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#0b1020] text-slate-100">
+    <div className="min-h-screen overflow-hidden bg-[#071f16] text-slate-100">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/95 px-6 py-5 backdrop-blur">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#071f16]/95 px-6 py-5 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
           <a href="#home" className="text-2xl font-black tracking-wider">
-            MY PORTFOLIO<span className="text-cyan-400">.</span>
+            MY PORTFOLIO<span className="text-yellow-400">.</span>
           </a>
 
           <button
@@ -72,7 +72,7 @@ function App() {
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 onClick={() => setMenu(false)}
-                className="text-slate-300 transition hover:text-cyan-400"
+                className="text-slate-300 transition hover:text-yellow-400"
               >
                 {item}
               </a>
@@ -88,14 +88,14 @@ function App() {
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <div>
-            <p className="font-bold tracking-[0.25em] text-cyan-400">
+            <p className="font-bold tracking-[0.25em] text-yellow-400">
               BSIT STUDENT PORTFOLIO
             </p>
 
             <h1 className="mt-5 text-5xl font-black leading-tight sm:text-7xl">
               Matthew
               <br />
-              <span className="text-violet-400">Nebres.</span>
+              <span className="text-green-400">Nebres.</span>
             </h1>
 
             <p className="mt-6 max-w-lg leading-8 text-slate-400">
@@ -107,14 +107,14 @@ function App() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="rounded-xl bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-white"
+                className="rounded-xl bg-yellow-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-white"
               >
                 View My Work ↗
               </a>
 
               <a
                 href="#about"
-                className="rounded-xl border border-white/20 px-6 py-3 font-bold transition hover:border-violet-400 hover:text-violet-400"
+                className="rounded-xl border border-white/20 px-6 py-3 font-bold transition hover:border-green-400 hover:text-green-400"
               >
                 About Me
               </a>
@@ -122,14 +122,14 @@ function App() {
           </div>
 
           <div className="flex justify-center">
-            <div className="relative w-full max-w-sm rounded-3xl border border-violet-400/30 bg-gradient-to-br from-cyan-400/10 to-violet-500/20 p-8 text-center shadow-2xl shadow-violet-900/20">
-              <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-cyan-400/10 blur-xl" />
+            <div className="relative w-full max-w-sm rounded-3xl border border-green-400/30 bg-gradient-to-br from-yellow-400/10 to-violet-500/20 p-8 text-center shadow-2xl shadow-violet-900/20">
+              <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-yellow-400/10 blur-xl" />
 
               
               <img
                 src={`${import.meta.env.BASE_URL}profile.jpg`}
                 alt="Matthew Nebres"
-                className="mx-auto h-40 w-40 rounded-full border-4 border-cyan-400/50 object-cover shadow-xl"
+                className="mx-auto h-40 w-40 rounded-full border-4 border-yellow-400/50 object-cover shadow-xl"
                />
 
 
@@ -139,10 +139,10 @@ function App() {
               </p>
 
               <div className="mt-6 flex justify-center gap-3">
-                <span className="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
+                <span className="rounded-full bg-yellow-400/10 px-4 py-2 text-sm text-cyan-300">
                   Technology
                 </span>
-                <span className="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">
+                <span className="rounded-full bg-green-400/10 px-4 py-2 text-sm text-violet-300">
                   Creativity
                 </span>
               </div>
@@ -154,15 +154,15 @@ function App() {
       {/* About */}
       <section
         id="about"
-        className="scroll-mt-24 border-y border-white/5 bg-[#111a30] px-6 py-20"
+        className="scroll-mt-24 border-y border-white/5 bg-[#103b29] px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <p className="font-bold tracking-widest text-cyan-400">
+          <p className="font-bold tracking-widest text-yellow-400">
             GET TO KNOW ME
           </p>
 
           <h2 className="mt-3 text-4xl font-black sm:text-5xl">
-            About Me<span className="text-violet-400">.</span>
+            About Me<span className="text-green-400">.</span>
           </h2>
 
           <div className="mt-8 grid gap-10 md:grid-cols-2">
@@ -189,7 +189,7 @@ function App() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-violet-400/20 bg-violet-400/10 px-4 py-3 text-sm text-violet-200"
+                    className="rounded-lg border border-green-400/20 bg-green-400/10 px-4 py-3 text-sm text-violet-200"
                   >
                     {skill}
                   </span>
@@ -206,18 +206,18 @@ function App() {
         className="scroll-mt-24 px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <p className="font-bold tracking-widest text-cyan-400">
+          <p className="font-bold tracking-widest text-yellow-400">
             WHAT I HAVE WORKED ON
           </p>
 
           <div className="mt-3 flex flex-wrap items-end justify-between gap-5">
             <h2 className="text-4xl font-black sm:text-5xl">
-              My Projects<span className="text-violet-400">.</span>
+              My Projects<span className="text-green-400">.</span>
             </h2>
 
             <button
               onClick={() => setShowMore(!showMore)}
-              className="rounded-lg border border-cyan-400/40 px-5 py-3 text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-950"
+              className="rounded-lg border border-yellow-400/40 px-5 py-3 text-cyan-300 transition hover:bg-yellow-400 hover:text-slate-950"
             >
               {showMore ? 'Show Less ↑' : 'View More ↓'}
             </button>
@@ -227,13 +227,13 @@ function App() {
             {projects.slice(0, showMore ? 3 : 2).map((project, i) => (
               <article
                 key={project.name}
-                className="rounded-2xl border border-white/10 bg-[#111a30] p-6 transition hover:-translate-y-1 hover:border-cyan-400/50"
+                className="rounded-2xl border border-white/10 bg-[#103b29] p-6 transition hover:-translate-y-1 hover:border-yellow-400/50"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-5xl font-black text-violet-400/70">
+                  <span className="text-5xl font-black text-green-400/70">
                     {project.number}
                   </span>
-                  <span className="rounded-full bg-cyan-400/10 px-3 py-2 text-xs text-cyan-300">
+                  <span className="rounded-full bg-yellow-400/10 px-3 py-2 text-xs text-cyan-300">
                     {project.type}
                   </span>
                 </div>
@@ -246,13 +246,13 @@ function App() {
 
                 <button
                   onClick={() => setDetails(details === i ? -1 : i)}
-                  className="mt-6 font-bold text-cyan-400 transition hover:text-white"
+                  className="mt-6 font-bold text-yellow-400 transition hover:text-white"
                 >
                   {details === i ? 'Hide Details −' : 'Project Details +'}
                 </button>
 
                 {details === i && (
-                  <div className="mt-4 rounded-lg border border-white/10 bg-[#0b1020] p-4 text-sm leading-6 text-slate-300">
+                  <div className="mt-4 rounded-lg border border-white/10 bg-[#071f16] p-4 text-sm leading-6 text-slate-300">
                     This project helps me practice problem-solving and apply
                     what I have learned. More features and improvements can be
                     added as I continue learning.
@@ -267,20 +267,20 @@ function App() {
       {/* Resume */}
       <section
         id="resume"
-        className="scroll-mt-24 border-y border-white/5 bg-[#111a30] px-6 py-20"
+        className="scroll-mt-24 border-y border-white/5 bg-[#103b29] px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <p className="font-bold tracking-widest text-cyan-400">
+          <p className="font-bold tracking-widest text-yellow-400">
             MY BACKGROUND
           </p>
 
           <h2 className="mt-3 text-4xl font-black sm:text-5xl">
-            Resume<span className="text-violet-400">.</span>
+            Resume<span className="text-green-400">.</span>
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-[#0b1020] p-6">
-              <p className="text-sm font-bold text-violet-400">EDUCATION</p>
+            <div className="rounded-2xl border border-white/10 bg-[#071f16] p-6">
+              <p className="text-sm font-bold text-green-400">EDUCATION</p>
               <h3 className="mt-4 text-xl font-bold">
                 Bachelor of Science in Information Technology
               </h3>
@@ -292,8 +292,8 @@ function App() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-[#0b1020] p-6">
-              <p className="text-sm font-bold text-violet-400">PROFILE</p>
+            <div className="rounded-2xl border border-white/10 bg-[#071f16] p-6">
+              <p className="text-sm font-bold text-green-400">PROFILE</p>
               <h3 className="mt-4 text-xl font-bold">
                 Skills and Interests
               </h3>
@@ -306,7 +306,9 @@ function App() {
 
           <a
             href="mailto:matthewnebres@cvsu.edu.ph?subject=Resume%20Request"
-            className="mt-7 inline-block rounded-xl bg-violet-500 px-6 py-3 font-bold transition hover:bg-violet-400"
+            
+            className="mt-7 inline-block rounded-xl bg-yellow-400 px-6 py-3 font-bold text-green-950 transition hover:bg-yellow-300"
+
           >
             Request My CV ↗
           </a>
@@ -320,12 +322,12 @@ function App() {
       >
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2">
           <div>
-            <p className="font-bold tracking-widest text-cyan-400">
+            <p className="font-bold tracking-widest text-yellow-400">
               LET'S CONNECT
             </p>
 
             <h2 className="mt-3 text-4xl font-black sm:text-5xl">
-              Contact Me<span className="text-violet-400">.</span>
+              Contact Me<span className="text-green-400">.</span>
             </h2>
 
             <p className="mt-6 max-w-md leading-8 text-slate-400">
@@ -341,7 +343,7 @@ function App() {
               href="https://github.com/matthewnebres-dotcom"
               target="_blank"
               rel="noreferrer"
-              className="mt-4 inline-block text-violet-400 transition hover:text-white"
+              className="mt-4 inline-block text-green-400 transition hover:text-white"
             >
               Visit My GitHub ↗
             </a>
@@ -349,7 +351,7 @@ function App() {
 
           <form
             onSubmit={sendMessage}
-            className="space-y-5 rounded-2xl border border-white/10 bg-[#111a30] p-6"
+            className="space-y-5 rounded-2xl border border-white/10 bg-[#103b29] p-6"
           >
             <div>
               <label htmlFor="name" className="mb-2 block text-sm">
@@ -360,7 +362,7 @@ function App() {
                 name="name"
                 required
                 placeholder="Enter your name"
-                className="w-full rounded-lg border border-white/10 bg-[#0b1020] p-3 outline-none focus:border-cyan-400"
+                className="w-full rounded-lg border border-white/10 bg-[#071f16] p-3 outline-none focus:border-yellow-400"
               />
             </div>
 
@@ -374,7 +376,7 @@ function App() {
                 type="email"
                 required
                 placeholder="Enter your email"
-                className="w-full rounded-lg border border-white/10 bg-[#0b1020] p-3 outline-none focus:border-cyan-400"
+                className="w-full rounded-lg border border-white/10 bg-[#071f16] p-3 outline-none focus:border-yellow-400"
               />
             </div>
 
@@ -388,13 +390,13 @@ function App() {
                 required
                 rows="4"
                 placeholder="Write your message"
-                className="w-full resize-y rounded-lg border border-white/10 bg-[#0b1020] p-3 outline-none focus:border-cyan-400"
+                className="w-full resize-y rounded-lg border border-white/10 bg-[#071f16] p-3 outline-none focus:border-yellow-400"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-white"
+              className="w-full rounded-lg bg-yellow-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-white"
             >
               Send Message ↗
             </button>
@@ -409,11 +411,11 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-[#111a30] px-6 py-7">
+      <footer className="border-t border-white/10 bg-[#103b29] px-6 py-7">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 text-sm text-slate-500">
           <p>© 2026 Matthew T. Nebres</p>
           <p>Built with ReactJS and Tailwind CSS</p>
-          <a href="#home" className="text-cyan-400 hover:text-white">
+          <a href="#home" className="text-yellow-400 hover:text-white">
             Back to Top ↑
           </a>
         </div>
