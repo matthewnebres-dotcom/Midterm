@@ -21,9 +21,9 @@ function App() {
       number: '02',
     },
     {
-      name: 'Game Concept',
-      type: 'Creative Project',
-      description: 'An original game idea featuring characters and a unique world.',
+      name: 'Calculator',
+      type: 'Web application',
+      description: 'A simple calculator',
       number: '03',
     },
   ]
@@ -52,7 +52,7 @@ function App() {
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0b1020]/95 px-6 py-5 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
           <a href="#home" className="text-2xl font-black tracking-wider">
-            MN<span className="text-cyan-400">.</span>
+            MY PORTFOLIO<span className="text-cyan-400">.</span>
           </a>
 
           <button
@@ -125,13 +125,17 @@ function App() {
             <div className="relative w-full max-w-sm rounded-3xl border border-violet-400/30 bg-gradient-to-br from-cyan-400/10 to-violet-500/20 p-8 text-center shadow-2xl shadow-violet-900/20">
               <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-cyan-400/10 blur-xl" />
 
-              <div className="mx-auto grid h-40 w-40 place-items-center rounded-full border-4 border-cyan-400/50 bg-gradient-to-br from-cyan-400 to-violet-500 text-6xl font-black text-slate-950 shadow-xl">
-                MN
-              </div>
+              
+              <img
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
+                alt="Matthew Nebres"
+                className="mx-auto h-40 w-40 rounded-full border-4 border-cyan-400/50 object-cover shadow-xl"
+               />
+
 
               <h2 className="mt-6 text-2xl font-bold">Matthew Nebres</h2>
               <p className="mt-2 text-slate-400">
-                Student • Creator • Gamer
+                Student • Creative • Gamer
               </p>
 
               <div className="mt-6 flex justify-center gap-3">
@@ -164,9 +168,9 @@ function App() {
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <p className="leading-8 text-slate-400">
               I am currently taking Bachelor of Science in Information
-              Technology at Cavite State University. I am learning programming,
+              Technology at Cavite State University Tanza Campus. I am learning programming,
               database management, and website development through my school
-              projects. Outside of coding, I enjoy anime, drawing characters,
+              projects. Outside of coding, I enjoy anime, drawing characters, reading mangas,
               and thinking of ideas for my own games.
             </p>
 
@@ -179,7 +183,7 @@ function App() {
                   'Tailwind CSS',
                   'JavaScript',
                   'HTML & CSS',
-                  'MySQL',
+                  'Java',
                   'Drawing',
                   'Game Design',
                 ].map((skill) => (
@@ -281,7 +285,7 @@ function App() {
                 Bachelor of Science in Information Technology
               </h3>
               <p className="mt-3 text-slate-400">
-                Cavite State University
+                Cavite State University Tanza Campus
               </p>
               <p className="mt-2 text-sm text-slate-500">
                 College Student
@@ -407,7 +411,7 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-white/10 bg-[#111a30] px-6 py-7">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 text-sm text-slate-500">
-          <p>© 2026 Matthew Nebres</p>
+          <p>© 2026 Matthew T. Nebres</p>
           <p>Built with ReactJS and Tailwind CSS</p>
           <a href="#home" className="text-cyan-400 hover:text-white">
             Back to Top ↑
